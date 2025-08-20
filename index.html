@@ -104,11 +104,26 @@
             <p>Após a repercussão da matéria, muitos leitores perguntaram onde encontrar o kit S.O.S Crescimento original, que foi testado e aprovado. A venda é feita exclusivamente através do site oficial do fabricante para garantir a autenticidade e a garantia do produto.</p>
             <p>Atenção: Desconfie de imitações vendidas em outras plataformas.</p>
 
-<!-- NOVO BANNER PRINCIPAL DO PRODUTO -->
+<!-- NOVO BANNER INTERATIVO COM HOTSPOT PULSANTE -->
 <div class="my-12">
-    <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer">
+    <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer" class="block relative group">
+        <!-- A Imagem Principal -->
         <img src="banner-principal.jpg" alt="Banner do Kit SOS Crescimento com antes e depois" 
-             class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300 cursor-pointer w-full">
+             class="rounded-xl shadow-2xl w-full transition-transform duration-300 group-hover:scale-105">
+
+        <!-- O Hotspot Pulsante -->
+        <div class="absolute bottom-[10%] left-[68%] transform -translate-x-1/2 -translate-y-1/2">
+            <div class="w-16 h-16 rounded-full bg-white/30 flex items-center justify-center animate-pulse">
+                <div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center">
+                     <span class="text-white text-3xl font-black">↓</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Texto flutuante que aparece ao passar o mouse (opcional, mas legal) -->
+        <div class="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <p class="text-white text-2xl font-bold border-2 p-4 rounded-lg">CLIQUE PARA GARANTIR O SEU!</p>
+        </div>
     </a>
 </div>
 
@@ -149,4 +164,5 @@
 
 </body>
 </html>
+
 
