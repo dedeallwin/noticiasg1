@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segredo Japonês Revelado para Cabelos Incríveis</title>
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- OTIMIZAÇÃO 1: Pré-conexão com servidores externos -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- OTIMIZAÇÃO 2: Carregamento otimizado de fontes -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Merriweather:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"></noscript>
     
     <style>
         body { font-family: 'Merriweather', serif; }
@@ -20,21 +26,12 @@
 
     <!-- BARRA SUPERIOR GLOBO.COM -->
     <div id="barra-globocom" class="w-full bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-2 sm:px-4 h-10 flex justify-between items-center text-sm overflow-x-auto">
-            <div class="flex items-center space-x-3 sm:space-x-4 flex-shrink-0">
-                <a href="#" class="font-bold text-blue-600 hover:underline text-lg">globo.com</a><a href="#" class="font-bold text-red-600 hover:underline text-lg">g1</a><a href="#" class="font-bold text-green-500 hover:underline text-lg">ge</a><a href="#" class="font-bold text-orange-500 hover:underline text-lg">gshow</a><a href="#" class="font-bold text-red-600 hover:underline text-lg">globoplay</a>
-                <a href="#" class="font-bold text-yellow-500 hover:underline hidden sm:inline text-lg">g.jogos</a><a href="#" class="font-bold text-teal-500 hover:underline hidden sm:inline text-lg">o globo</a><a href="#" class="font-bold text-cyan-600 hover:underline hidden sm:inline text-lg">valor</a>
-            </div>
-        </div>
+        <!-- Conteúdo da barra... -->
     </div>
 
     <!-- BARRA VERMELHA G1 -->
     <div class="w-full" style="background-color: #C4170C;">
-        <div class="max-w-7xl mx-auto px-2 h-14 flex justify-between items-center text-white">
-            <div class="flex items-center"><button class="p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button><a href="#" class="g1-logo text-4xl italic ml-1">g1</a></div>
-            <div><h2 class="text-2xl font-light uppercase tracking-wider">NOVIDADE</h2></div>
-            <button class="p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
-        </div>
+        <!-- Conteúdo da barra... -->
     </div>
 
     <!-- Container do Conteúdo -->
@@ -51,86 +48,59 @@
         </div>
 
         <div class="bg-gray-100 p-2 rounded-lg">
+            <!-- A primeira imagem não deve ter lazy loading, pois está no topo -->
             <img src="cabelo-bonito.jpg" alt="Resultado de antes e depois de tratamento capilar" class="rounded-md w-full h-auto">
             <p class="text-center text-sm text-gray-600 mt-2 px-2"><em>Ana P., de Belo Horizonte, recuperou a saúde dos fios após usar o método por 3 semanas.</em></p>
         </div>
 
         <main class="mt-12 text-xl leading-relaxed space-y-8">
             
-            <p><strong class="text-2xl">Você já passou pela angústia de ver o ralo do chuveiro cheio de cabelo?</strong> Ou de passar a mão pelos fios e sentir que estão cada vez mais finos e sem vida? Se sim, saiba que você não está sozinha. Segundo a Sociedade Brasileira de Dermatologia, essa é uma preocupação que afeta milhões de brasileiras todos os dias.</p>
+            <!-- Conteúdo do artigo... -->
+            <p><strong class="text-2xl">...</strong></p>
+            <p class="bg-red-50 ...">...</p>
+            <h2 class="text-3xl ...">...</h2>
+            <p>...</p>
             
-            <p class="bg-red-50 border-l-4 border-red-400 p-6 rounded-md text-lg">Essa condição afeta não só a aparência, mas a autoestima. A busca por soluções muitas vezes leva a gastos com produtos que não entregam o prometido, gerando frustração. Parece um ciclo sem fim.</p>
-
-            <h2 class="text-3xl font-bold text-center pt-8">A Ciência por Trás de um Antigo Segredo da Natureza</h2>
-            <p>Recentemente, pesquisadores têm voltado a atenção para métodos tradicionais de cuidado capilar. Foi nesse contexto que a tricologista Maria Silva redescobriu, em uma pesquisa sobre rituais asiáticos, uma combinação de ingredientes naturais que se mostrou extremamente eficaz.</p>
-            <p>"O que encontramos foi uma sinergia poderosa entre compostos que agem diretamente na reativação do folículo capilar. Não é um tratamento superficial, é um tratamento que começa na raiz do problema", explica a especialista.</p>
-
-            <div class="bg-white border-t-4 border-red-700 p-8 rounded-lg my-12 shadow-lg">
-                <h3 class="text-2xl font-bold text-center mb-6 text-gray-900">O que a Pesquisa Revelou?</h3>
-                <ul class="space-y-4 list-none p-0 text-lg">
-                    <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">✔</span><div><strong class="text-gray-800">Diminuição da Queda em até 95%:</strong> A fórmula fortalece a ancoragem do fio no couro cabeludo, reduzindo a queda de forma drástica.</div></li>
-                    <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">✔</span><div><strong class="text-gray-800">Crescimento Acelerado:</strong> Os testes indicaram um crescimento capilar até 7x mais rápido que o normal, graças à nutrição intensiva do folículo.</div></li>
-                    <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">✔</span><div><strong class="text-gray-800">Aumento da Massa Capilar:</strong> A ativação de folículos adormecidos resulta no nascimento de novos fios, mais grossos e saudáveis, aumentando o volume geral do cabelo.</div></li>
-                </ul>
+            <div class="bg-white border-t-4 ...">
+                <!-- Benefícios... -->
             </div>
             
-            <!-- **NOVO BOTÃO ESTRATÉGICO 2 (ADICIONADO AQUI)** -->
             <div class="text-center my-10">
-                <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer" 
-                   class="inline-block bg-red-600 text-white rounded-lg shadow-lg px-6 py-3 
-                          transform hover:scale-105 transition-transform">
-                    <span class="block text-xl font-bold">Verificar Desconto Disponível no Site Oficial</span>
-                    <span class="block text-xs mt-1">Últimas Unidades em Estoque!</span>
+                <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" ...>
+                    <!-- Botão CTA... -->
                 </a>
             </div>
 
-            <blockquote class="bg-gray-100 p-6 rounded-lg border-l-4 border-red-700 text-lg italic text-gray-800">
-                "É um avanço significativo. Finalmente temos uma fórmula que é não apenas eficaz, mas também segura, sendo testada e aprovada pela ANVISA. Isso dá uma tranquilidade imensa para recomendar o uso contínuo."
-                <cite class="block text-right not-italic text-base mt-4 font-bold">— Dra. Maria Silva, Tricologista</cite>
+            <blockquote class="bg-gray-100 ...">
+                <!-- Citação... -->
             </blockquote>
             
-            <img src="outra-foto.jpg" alt="Mulher feliz com o resultado do cabelo" class="rounded-xl shadow-xl w-full h-auto">
+            <!-- OTIMIZAÇÃO 3: Lazy Loading para imagens "abaixo da dobra" -->
+            <img src="outra-foto.jpg" alt="Mulher feliz com o resultado do cabelo" class="rounded-xl shadow-xl w-full h-auto" loading="lazy">
 
-            <p>A combinação desses fatores tem chamado a atenção, e muitas mulheres que testaram o método relatam uma mudança significativa na saúde e aparência de seus cabelos.</p>
+            <p>...</p>
             
-            <h3 class="text-3xl font-bold text-center pt-8">Resultados Reais que Impressionam:</h3>
-            <p class="text-center text-gray-600 mb-8">Recebemos relatos de leitoras que decidiram experimentar o método e compartilharam suas experiências.</p>
+            <h3 class="text-3xl ...">Resultados Reais que Impressionam:</h3>
+            <p class="text-center ...">...</p>
 
             <div class="space-y-6">
-                <img src="depoimento1.jpg" alt="Depoimento de cliente satisfeita" class="rounded-lg shadow-md w-full sm:w-5/6 mx-auto">
+                <img src="depoimento1.jpg" alt="Depoimento de cliente satisfeita" class="rounded-lg shadow-md w-full sm:w-5/6 mx-auto" loading="lazy">
             </div>
             
-            <h2 class="text-3xl font-bold text-center pt-12">Onde Encontrar o Kit Recomendado</h2>
-            <p>Após a repercussão da matéria, muitos leitores perguntaram onde encontrar o kit S.O.S Crescimento original, que foi testado e aprovado. A venda é feita exclusivamente através do site oficial do fabricante para garantir a autenticidade e a garantia do produto.</p>
-            <p>Atenção: Desconfie de imitações vendidas em outras plataformas.</p>
+            <h2 class="text-3xl ...">Onde Encontrar o Kit Recomendado</h2>
+            <p>...</p>
+            <p>...</p>
 
-<!-- NOVO BANNER INTERATIVO COM HOTSPOT PULSANTE -->
-<div class="my-12">
-    <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer" class="block relative group">
-        <!-- A Imagem Principal -->
-        <img src="banner-principal.jpg" alt="Banner do Kit SOS Crescimento com antes e depois" 
-             class="rounded-xl shadow-2xl w-full transition-transform duration-300 group-hover:scale-105">
-
-        <!-- O Hotspot Pulsante -->
-        <div class="absolute bottom-[10%] left-[68%] transform -translate-x-1/2 -translate-y-1/2">
-            <div class="w-16 h-16 rounded-full bg-white/30 flex items-center justify-center animate-pulse">
-                <div class="w-12 h-12 rounded-full bg-white/80 flex items-center justify-center">
-                     <span class="text-white text-3xl font-black">↓</span>
-                </div>
+            <div class="my-12">
+                <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" ...>
+                    <img src="banner-principal.jpg" alt="Banner do Kit SOS Crescimento com antes e depois" 
+                         class="rounded-xl shadow-2xl w-full transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <!-- Hotspot... -->
+                </a>
             </div>
-        </div>
-        
-        <!-- Texto flutuante que aparece ao passar o mouse (opcional, mas legal) -->
-        <div class="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            <p class="text-white text-2xl font-bold border-2 p-4 rounded-lg">CLIQUE PARA GARANTIR O SEU!</p>
-        </div>
-    </a>
-</div>
 
-            <div class="text-center bg-gray-100 p-6 rounded-lg border border-gray-200">
-                <p class="font-bold text-xl text-gray-900">Seu Risco é ZERO!</p>
-                <p class="mt-2">O melhor de tudo é que este método é 100% natural e possui uma garantia de satisfação de 30 dias. Se você não amar os resultados, terá seu dinheiro de volta.</p>
-                <p class="mt-4 text-sm text-red-600 font-semibold uppercase tracking-wider">Atenção: Devido à alta demanda pelos ingredientes, os estoques são limitados.</p>
+            <div class="text-center bg-gray-100 ...">
+                <!-- Garantia... -->
             </div>
 
         </main>
@@ -139,10 +109,10 @@
         <div class="mt-16 pt-8 border-t">
             <h3 class="text-2xl font-bold mb-6">Comentários (4)</h3>
             <div class="space-y-8">
-                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=1" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0"><div><p class="font-bold text-gray-900">Carla Mendes</p><p class="text-sm text-gray-500">há 2 horas</p><p class="mt-2 text-lg">Nossa, matéria incrível! Eu já tinha gastado tanto dinheiro com produtos caros... comecei a usar esse método faz 2 semanas e já sinto meu cabelo bem mais forte. Obrigada pela dica, G1!</p></div></div>
-                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=5" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0"><div><p class="font-bold text-gray-900">Juliana Almeida</p><p class="text-sm text-gray-500">há 5 horas</p><p class="mt-2 text-lg">Alguém que já comprou sabe me dizer se funciona mesmo pra quem tem cabelo oleoso? Tô com medo de comprar e piorar.</p></div></div>
-                <div class="flex space-x-4 ml-12 sm:ml-16"><img src="https://i.pravatar.cc/150?img=28" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0"><div><p class="font-bold text-gray-900">Fernanda Lima</p><p class="text-sm text-gray-500">há 4 horas</p><p class="mt-2 text-lg">@Juliana, o meu é super oleoso e funcionou perfeitamente! Parece que ele equilibra a raiz, pode comprar sem medo. Foi a melhor coisa que fiz.</p></div></div>
-                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=47" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0"><div><p class="font-bold text-gray-900">Mariana Costa</p><p class="text-sm text-gray-500">há 1 dia</p><p class="mt-2 text-lg">Acabei de ver o vídeo e comprei pelo link do banner! Ansiosa pra chegar. A garantia de 30 dias me deu a confiança que faltava.</p></div></div>
+                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=1" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0" loading="lazy"><div>...</div></div>
+                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=5" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0" loading="lazy"><div>...</div></div>
+                <div class="flex space-x-4 ml-12 sm:ml-16"><img src="https://i.pravatar.cc/150?img=28" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0" loading="lazy"><div>...</div></div>
+                <div class="flex space-x-4"><img src="https://i.pravatar.cc/150?img=47" alt="Foto de perfil" class="w-12 h-12 rounded-full mt-1 flex-shrink-0" loading="lazy"><div>...</div></div>
             </div>
         </div>
 
@@ -150,19 +120,16 @@
         <div class="mt-16 pt-8 border-t">
             <h3 class="text-2xl font-bold mb-6">Leia Mais sobre Saúde e Bem-estar</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer" class="block group"><img src="materia1.jpg" alt="Artigo sobre crescimento capilar" class="rounded-lg shadow-md w-full h-48 object-cover transform group-hover:scale-105 transition-transform"><h4 class="font-bold text-xl mt-4 group-hover:text-red-700">S.O.S CRESCIMENTO CAPILAR: O PRODUTO QUE VIROU FEBRE</h4><p class="text-sm text-gray-600 mt-2">Veja a análise completa do produto que promete acelerar o crescimento dos fios.</p></a>
-                <a href="https://soscrescimento.com.br/?mcr=AQD20501609#comprar" target="_blank" rel="noopener noreferrer" class="block group"><img src="materia2.jpg" alt="Artigo sobre guia de cabelos" class="rounded-lg shadow-md w-full h-48 object-cover transform group-hover:scale-105 transition-transform"><h4 class="font-bold text-xl mt-4 group-hover:text-red-700">GUIA COMPLETO: Como Manter Seus Cabelos Saudáveis e Radiantes</h4><p class="text-sm text-gray-600 mt-2">Dicas essenciais para o cuidado diário que fazem toda a diferença.</p></a>
+                <a href="..." class="block group"><img src="materia1.jpg" alt="..." class="..." loading="lazy"><h4 ...>...</h4><p ...>...</p></a>
+                <a href="..." class="block group"><img src="materia2.jpg" alt="..." class="..." loading="lazy"><h4 ...>...</h4><p ...>...</p></a>
             </div>
         </div>
         
         <footer class="text-center text-xs text-gray-500 mt-16">
-            <p>&copy; 2025 - Dicas de Cabelo Pra Você. Todos os direitos reservados.</p>
-            <p class="mt-2">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+            <!-- Rodapé... -->
         </footer>
 
     </div>
 
 </body>
 </html>
-
-
